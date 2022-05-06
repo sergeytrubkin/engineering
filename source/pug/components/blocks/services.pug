@@ -1,0 +1,76 @@
+mixin services()
+  -
+    const servicesList = [
+      {
+        img: "services-img-1",
+        title: "Общее обследование",
+        text: "Экспертиза отдельных конструкций, обмерные работы, определение прочности, расчет несущей способности и&nbsp;т.д.",
+        link: "#",
+        alt: "service-1",
+      },
+      {
+        img: "services-img-2",
+        title: "Тепловизионная съемка",
+        text: "Исследование системы отопления, вентиляции и&nbsp;кондиционирования, а&nbsp;также оценка энергоэффективности здания",
+        link: "#",
+        alt: "service-2",
+      },
+      {
+        img: "services-img-3",
+        title: "Телеинспекция инженерных сетей",
+        text: "Цветная телевизионная съемка внутренней поверхности любых протяженных объектов до&nbsp;250 метров",
+        link: "#",
+        alt: "service-3",
+      },
+      {
+        img: "services-img-4",
+        title: "Тахеометрическая съемка",
+        text: "Построение чертежей при помощи лазера, который с&nbsp;точностью до&nbsp;микрона определяет расположение объектов в&nbsp;пространстве",
+        link: "#",
+        alt: "service-4",
+      },
+      {
+        img: "services-img-1",
+        title: "Общее обследование",
+        text: "Экспертиза отдельных конструкций, обмерные работы, определение прочности, расчет несущей способности и&nbsp;т.д.",
+        link: "#",
+        alt: "service-1",
+      },
+      {
+        img: "services-img-2",
+        title: "Тепловизионная съемка",
+        text: "Исследование системы отопления, вентиляции и&nbsp;кондиционирования, а&nbsp;также оценка энергоэффективности здания",
+        link: "#",
+        alt: "service-2",
+      },
+      {
+        img: "services-img-3",
+        title: "Телеинспекция инженерных сетей",
+        text: "Цветная телевизионная съемка внутренней поверхности любых протяженных объектов до&nbsp;250 метров",
+        link: "#",
+        alt: "service-3",
+      },
+      {
+        img: "services-img-4",
+        title: "Тахеометрическая съемка",
+        text: "Построение чертежей при помощи лазера, который с&nbsp;точностью до&nbsp;микрона определяет расположение объектов в&nbsp;пространстве",
+        link: "#",
+        alt: "service-4",
+      },
+    ]
+
+  section.services&attributes(attributes)
+    .services__block.js-block
+      .services__wrapper.js-block-wrapper
+        .services__bg
+        +vertical-lines()
+        .container
+          h2.services__title Услуги
+          p.services__descr Выполняем как комплексное обследование, так и&nbsp;отдельные виды работ
+          .services__slider.js-scroll-block
+            ul.services__list
+              each service in servicesList
+                li.services__item
+                  +service(service)
+        .services__progress-bar.js-progress-bar
+

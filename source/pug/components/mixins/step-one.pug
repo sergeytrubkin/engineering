@@ -1,0 +1,27 @@
+mixin step-one()
+  section.step.step--right-content.preparing
+    .step__wrapper
+      .preparing__slider
+        .swiper
+          .swiper-wrapper
+            .swiper-slide
+              +img("content", "image-1", "jpg", 960, 441, "image")
+            .swiper-slide
+              +img("content", "image-1", "jpg", 960, 441, "image")
+            .swiper-slide
+              +img("content", "image-1", "jpg", 960, 441, "image")
+            .swiper-slide
+              +img("content", "image-1", "jpg", 960, 441, "image")
+          .swiper-pagination
+      .container
+        .step__content-wrap
+          h3.step__title
+            span шаг &#8470;1.
+            | Подготовительные работы
+          p.step__text Мы&nbsp;осматриваем здание, делаем замеры и&nbsp;проверяем наличие визуально заметных дефектов: трещин, коррозии, повреждения фундамента и&nbsp;т.д.
+          .preparing__quote
+            .preparing__avatar
+              +img("content", "photo", "jpg", 140, 140, "фото")
+            figure
+              blockquote “Задача этого этапа получить максимально полное представление о&nbsp;конструкции здания, условиях его эксплуатации и&nbsp;возможных слабых местах“
+              figcaption АЛЕКСЕЙ, обследователь и&nbsp;главный инженер проектов

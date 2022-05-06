@@ -1,0 +1,58 @@
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 18px 0;
+  z-index: 11;
+
+  @include vp-1439 {
+    padding: 21px 0;
+  }
+
+  @include vp-1023 {
+    padding: 25px 0;
+  }
+
+  &.bg {
+    background: $color-prussian-blue-90;
+
+    .main-nav__wrapper {
+      top: 80px;
+      height: calc(100vh - 80px);
+      padding-top: 40px;
+    }
+  }
+
+  .container {
+    display: flex;
+    align-items: center;
+  }
+
+  &__logo {
+    margin-left: 8.45%;
+    z-index: 12;
+
+    color: $color-default-white;
+
+    transition: opacity $trans-default;
+
+    @include vp-1023 {
+      margin: 0 auto;
+    }
+
+    @include has-hover {
+      opacity: 0.6;
+      outline: none;
+    }
+  }
+
+  &__contacts {
+    margin-left: auto;
+    width: 32.35%;
+
+    @include vp-1023 {
+      display: none;
+    }
+  }
+}

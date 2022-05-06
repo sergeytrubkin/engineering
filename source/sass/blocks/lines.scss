@@ -1,0 +1,53 @@
+.lines {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  pointer-events: none;
+
+  &__wrap {
+    position: relative;
+    width: calc(100% - 60px * 2);
+    max-width: 1420px;
+    margin: 0 auto;
+    height: 100%;
+
+    @include vp-1439 {
+      width: calc(100% - 32px * 2);
+    }
+
+    @include vp-1023 {
+      width: calc(100% - 24px * 2);
+    }
+
+    @include vp-767 {
+      width: calc(100% - 16px * 2);
+    }
+  }
+
+  span {
+    position: absolute;
+    height: 100%;
+    width: 1px;
+    top: 0;
+    left: 0;
+    opacity: 0.1;
+
+    background-color: $color-default-white;
+
+    &:last-of-type {
+      left: auto;
+      right: 0;
+    }
+
+    &:nth-of-type(2) {
+      left: 33.82%;
+    }
+
+    &:nth-of-type(3) {
+      left: auto;
+      right: 32.35%;
+    }
+  }
+}

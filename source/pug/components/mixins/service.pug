@@ -1,0 +1,9 @@
+mixin service(data)
+  .service
+    .service__img
+      +img("content", data.img, "jpg", 400, 180, data.alt)
+    h3.service__title!= data.title
+    p.service__text!= data.text
+    a.service__link(href= data.link)
+      | Подробнее
+      +icon("arrow", 22, 10)

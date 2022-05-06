@@ -1,0 +1,13 @@
+mixin main-contacts()
+  .main-contacts&attributes(attributes)
+    .main-contacts__contact.main-contacts__contact--email
+      span.main-contacts__contact-title Пишите нам на email
+      a.main-contacts__contact-link(href="mailto:info@diagnistics.by")
+        +icon("mail", 11, 8)
+        | info@diagnistics.by
+    .main-contacts__contact.main-contacts__contact--phone
+      span.main-contacts__contact-title
+        +icon("phone", 12, 11)
+        | Есть вопросы? Звоните!
+      a.main-contacts__contact-link(href="tel:+375294564545")
+        | +375 (29) 456-45-45

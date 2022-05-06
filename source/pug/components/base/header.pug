@@ -1,0 +1,38 @@
+mixin header(headerMods)
+  -
+    const headerLinks = [
+      {
+        href: "#intro",
+        text: "Главная"
+      },
+      {
+        href: "#features",
+        text: "Преимущества"
+      },
+      {
+        href: "#services",
+        text: "Услуги"
+      },
+      {
+        href: "#process",
+        text: "Процесс работы"
+      },
+    ]
+
+  header.header(class=headerMods)
+    .container
+      nav.main-nav
+        button.main-nav__toggle.btn-reset(type="button", aria-label="Переключатель отображения меню", aria-pressed="false")
+          span
+          span
+          span
+        .main-nav__wrapper
+          ul.main-nav__list
+            each link in headerLinks
+              li.main-nav__item
+                a.main-nav__link(href=link.href data-navigation-link)=link.text
+          +main-contacts().main-nav__contacts
+      a.header__logo(href="#intro", aria-label="Переход на главную", data-navigation-link)
+        +img("content", "logo", "png", 197, 30, "Логотип")
+      +main-contacts().header__contacts
+

@@ -1,0 +1,20 @@
+extends ../components/base/layout
+
+block variables
+  - const title = "Инженерная диагностика"
+  - const wrapperMods = ""
+  - const hasHeader = true
+  - const headerMods = ""
+  - const hasFooter = true
+  - const footerMods = ""
+
+block main
+  main
+    +intro()#intro
+    +features()#features
+    +services()#services
+    +process()#process
+
+block modals
+  +modal("modal--video")(data-modal="video")
+    +modal-video()

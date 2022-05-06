@@ -1,0 +1,21 @@
+.modal--video {
+  .modal__content {
+    width: auto;
+    background-color: transparent;
+
+    @include vp-767 {
+      padding: 0;
+    }
+  }
+
+  .modal__close-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: $color-gorse;
+  }
+}
+
+.modal-video {
+  max-width: 800px;
+}

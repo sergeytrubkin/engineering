@@ -1,0 +1,54 @@
+.process {
+  padding-top: 108px;
+
+  @include vp-1023 {
+    padding-top: 70px;
+  }
+
+  &__title {
+    margin: 0;
+    margin-bottom: 30px;
+
+    font-family: $ff-bebas;
+    text-align: center;
+    font-weight: 700;
+    font-size: 80px;
+    line-height: 64px;
+    letter-spacing: 5px;
+
+    background: $blue-to-cerulean;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+
+    @include vp-1023 {
+      font-size: 60px;
+    }
+
+    @include vp-767 {
+      font-size: 50px;
+      line-height: 100%;
+    }
+  }
+
+  &__descr {
+    margin: 0 auto;
+    margin-bottom: 102px;
+    max-width: 600px;
+
+    font-family: $ff-gilroy;
+    text-align: center;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 28px;
+    color: $color-matterhorn;
+
+    @include vp-1023 {
+      margin-bottom: 60px;
+    }
+
+    @include vp-767 {
+      max-width: 90%;
+      font-size: 18px;
+    }
+  }
+}

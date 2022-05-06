@@ -1,0 +1,108 @@
+.service {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+
+  &__img {
+    position: relative;
+    margin-bottom: 30px;
+
+    @include vp-1023 {
+      margin-bottom: 20px;
+    }
+
+    @include vp-767 {
+      margin-bottom: 16px;
+    }
+
+    &::before {
+      content: "";
+      display: block;
+      padding-bottom: 45%;
+    }
+
+    img {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      left: 0;
+      top: 0;
+
+      object-fit: cover;
+    }
+  }
+
+  &__title {
+    margin: 0;
+    margin-bottom: 20px;
+
+    font-weight: 800;
+    font-size: 24px;
+    line-height: 117%;
+    letter-spacing: -0.5px;
+    color: $color-default-white;
+
+    @include vp-1023 {
+      margin-bottom: 16px;
+
+      font-size: 20px;
+    }
+
+    @include vp-767 {
+      margin-bottom: 14px;
+
+      font-size: 18px;
+    }
+  }
+
+  &__text {
+    margin: 0;
+    margin-bottom: 27px;
+    opacity: 0.7;
+
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 162%;
+    letter-spacing: -0.5px;
+    color: $color-default-white;
+
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 3;
+
+    @include vp-767 {
+      font-size: 14px;
+    }
+  }
+
+  &__link {
+    display: inline-flex;
+    align-items: center;
+    margin-top: auto;
+
+    font-family: $ff-bebas;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 16px;
+    letter-spacing: 7px;
+    color: $color-gorse;
+
+    transition: opacity $trans-default;
+
+    @include vp-767 {
+      font-size: 18px;
+    }
+
+    svg {
+      color: $color-gorse;
+      margin-left: 8px;
+    }
+
+    @include has-hover {
+      opacity: 0.7;
+      outline: none;
+    }
+  }
+}

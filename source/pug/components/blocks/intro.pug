@@ -1,0 +1,29 @@
+mixin intro()
+  .intro&attributes(attributes)
+    +vertical-lines()
+    .container
+      .intro__top
+        .intro__main-info
+          h1.intro__title Независимое обследование зданий и&nbsp;сооружений
+          p.intro__descr антенн, труб, теплосетей, канализаций и&nbsp;других объектов строительства
+        .intro__offer
+          a.intro__btn.btn(href="#")
+            +icon("download", 12, 12)
+            | получить коммерческое
+          p.intro__offer-descr Отправьте техзадание и&nbsp;получите коммерческое предложение в&nbsp;течении 15&nbsp;минут на&nbsp;свой email или в&nbsp;мессенджер
+      .intro__bottom
+        ul.intro__list
+          li.intro__item
+            +icon("icon-01", 54, 48)
+            span Начинаем работать без аванса
+          li.intro__item
+            +icon("icon-02", 54, 48)
+            span Предоставляем отсрочку платежа
+          li.intro__item
+            +icon("icon-03", 54, 48)
+            span Всегда называем справедливую цену
+        .intro__video
+          .intro__video-spinner
+            +img("content", "stamp", "png", 220, 220, "Смотрите 2-минутное видео")
+          button.intro__video-btn.btn-reset(type="button" data-open-modal="video" aria-label="запустить видео")
+            +img("content", "photo", "jpg", 140, 140, "Фото мужчины")

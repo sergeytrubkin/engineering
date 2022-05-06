@@ -1,0 +1,24 @@
+mixin features()
+  section.features&attributes(attributes)
+    .container
+      .features__wrap
+        .features__main
+          h2.features__title Мы&nbsp;работаем быстро <br> и&nbsp;наши отчеты проходят согласование с&nbsp;первого раза
+          p.features__descr Над вашим объектом работает целая команда: <br> 3&nbsp;ГИПа (главных инженеров проектов) с&nbsp;опытом работы от&nbsp;6&nbsp;лет и&nbsp;2&nbsp;штатных сотрудника для камеральных работ
+        .features__info
+          h3.features__inner-title Вы&nbsp;и&nbsp;Ваши архитекторы получаете:
+          ul.features__list
+            li.features__item
+              span.features__icon
+                +icon("icon-check", 14, 14)
+              span.features__text Отчет на&nbsp;который на&nbsp;100% можно положиться
+            li.features__item
+              span.features__icon
+                +icon("icon-check", 14, 14)
+              span.features__text Экономию времени и&nbsp;прогнозируемость сроков
+            li.features__item
+              span.features__icon
+                +icon("icon-check", 14, 14)
+              span.features__text Предварительные результаты сразу на&nbsp;месте
+      .features__image
+        +img("content", "sensors", "png", 283, 304, "сенсоры")
