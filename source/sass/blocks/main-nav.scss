@@ -66,6 +66,10 @@
   &__item {
     margin-right: 20px;
 
+    @include vp-767 {
+      text-align: center;
+    }
+
     &:not(:last-child) {
       margin-bottom: 30px;
     }
@@ -136,11 +140,11 @@
       }
 
       &:first-of-type {
-        top: calc(50% - 8px);
+        top: calc(50% - 10px);
       }
 
       &:last-of-type {
-        top: calc(50% + 8px);
+        top: calc(50% + 10px);
       }
 
       &:nth-child(2) {

@@ -3,24 +3,24 @@
   top: 0;
   left: 0;
   width: 100%;
-  padding: 18px 0;
+  padding: 16px 0;
   z-index: 11;
 
   @include vp-1439 {
-    padding: 21px 0;
+    padding: 19px 0;
   }
 
   @include vp-1023 {
-    padding: 25px 0;
+    padding: 23px 0;
   }
 
   &.bg {
     background: $color-prussian-blue-90;
 
     .main-nav__wrapper {
-      top: 80px;
-      height: calc(100vh - 80px);
-      padding-top: 40px;
+      top: 76px;
+      height: calc(100vh - 76px);
+      padding-top: 44px;
     }
   }
 

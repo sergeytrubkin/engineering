@@ -3,13 +3,13 @@ export class NavigationChanger {
     this._scrollDuration = 1000;
     this._currentIndex = 0;
     this._newCurrentIndex = null;
-    this._blockShift = 80;
+    this._blockShift = 76;
     this._linkElements = document.querySelectorAll('[data-navigation-link]');
 
     this._moveTo = new window.MoveTo({
       duration: this._scrollDuration,
       easing: 'easeOutQuart',
-      tolerance: 80,
+      tolerance: 76,
     });
 
     this._documentScrollHandler = this._documentScrollHandler.bind(this);

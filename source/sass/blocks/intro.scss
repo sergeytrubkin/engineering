@@ -1,6 +1,6 @@
 .intro {
   position: relative;
-  padding-top: 209px;
+  padding-top: 207px;
   padding-bottom: 62px;
 
   background-image: $cerulean-to-blue-80, url("../img/content/intro-bg.jpg");
@@ -35,11 +35,12 @@
     display: flex;
     justify-content: space-between;
     width: 100%;
-    margin-bottom: 55px;
+    margin-bottom: 68px;
     padding: 0 8.45%;
 
     @include vp-1439 {
       flex-direction: column;
+      margin-bottom: 55px;
     }
 
     @include vp-767 {
