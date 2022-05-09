@@ -11,7 +11,9 @@ const openMenu = () => {
 
 const closeMenu = () => {
   mainNav.classList.remove('is-active');
-  window.scrollLock.enableScrolling();
+  if (mobileWidth) {
+    window.scrollLock.enableScrolling();
+  }
 };
 
 const onClickBurger = (evt) => {
