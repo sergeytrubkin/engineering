@@ -27,7 +27,7 @@ const onClickBurger = (evt) => {
 };
 
 const onClickLink = (evt) => {
-  if (evt.target.closest('.main-nav__link')) {
+  if (evt.target.closest('[data-navigation-link]')) {
     closeMenu();
   }
 };
